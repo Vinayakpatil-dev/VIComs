@@ -290,3 +290,177 @@ body {
         transform: translateX(0);
     }
 }
+/* Basic styles for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgb(9, 1, 1);
+    color: #fff;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+nav {
+    background-color: black;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Main Content */
+.content {
+    flex: 1; /* This ensures that the content takes up available space */
+    padding: 100px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #D7284F;
+    color: black;
+    text-align: center;
+    padding: 10px 0; /* Reduced padding to make the footer even smaller */
+    margin-top: auto; /* Push the footer to the bottom */
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the About Us section in the footer */
+footer .about-us {
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+footer .about-us h2 {
+    font-size: 20px; /* Adjusted font size for compact look */
+    font-weight: 600;
+}
+
+footer .about-us p {
+    font-size: 16px; /* Adjusted font size */
+}
+
+/* Styling for the Contact Us section */
+footer .contact-us {
+    margin-top: 5px; /* Reduced margin */
+}
+
+footer .contact-us h3 {
+    font-size: 18px; /* Reduced size for compact look */
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+footer .contact-us p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Add padding so circles won't affect footer position */
+.c1, .c2, .c3 {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+
+nav{
+    width:90vw;
+    height:90px;
+    /* background-color: #8aa027; */
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li{
+    /* background-color: #fff; */
+    padding:20px;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:600px;
+    /* background-color: #fff; */
+    list-style: none;
+    color: var(--color-text-prime);
+    font-family: 'Poppins';
+}
+header nav ul h1{
+    font-weight: 200;
+    font-size: 50px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color:var(--color-text-prime);
+}
+
+#lgout{
+    color:var(--color-bgc);
+    background-color: #D7284F;
+    padding:10px 15px;
+    border-radius: 10px;
+}
+:root{
+    --color-text-prime:#D7284F;
+    --color-bgc:rgb(9, 1, 1);
+    font-family: 'Poppins';
+}
+.newww{
+color: wheat;
+}
+.footer-divider {
+    border: none; /* Remove default border style */
+    border-top: 2px solid black; /* Custom border style */
+    width: 60%; /* Adjust width */
+    margin: 10px auto; /* Center it with some space above and below */
+}
