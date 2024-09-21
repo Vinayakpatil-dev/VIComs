@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIComs - Maintenance</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='complaint.css')}}">
+    <link rel="icon" href="{{url_for('static',filename='images/mlogo.png')}}">
+</head>
+<body> 
+    <header>
+        <nav>
+            <img src="{{url_for('static',filename='images/logo_1.png')}}" alt="logo" width="111px" height="90px">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <h1>|</h1>
+                <li><a href="#" id="lgout">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="graphic"></div>
+    <div class="title"><h3>COMPLAINT</h3></div>
+    <div class="complaint">
+        <form action="#" method="post">
+            <textarea name="content" id="content" rows="10" cols="64"></textarea>
+            <button id="send" type="submit">SEND COMPLAINT</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIComs - Student</title>
+    <link rel="icon" href="{{url_for('static',filename='images/mlogo.png')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="{{url_for('static',filename='images/logo_1.png')}}" alt="logo" width="111px" height="90px">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <h1>|</h1>
+                <li><a href="{{ url_for('home_render') }}" id="lgout" >Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to VIComs</h1>
+        <button>Choose Services</button> 
+    </main>
+    <div class="line1"></div>
+    <div class="services">
+        <a href="{{ url_for('room_cleaning_render') }}">Room Cleaning</a>
+        <a href="{{ url_for('maintance_render') }}">Maintenance</a>
+        <a href="{{ url_for('complain_render') }}">Complaint</a>
+    </div>
+<script src="{{url_for('static',filename='Js/main.js')}}"></script> 
+</body>
+</html>

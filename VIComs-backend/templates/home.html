@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIComs - Welcome</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='home.css')}}">
+    <link rel="icon" href="{{url_for('static',filename='images/mlogo.png')}}">
+</head>
+<body>
+    <div class="intro"><h1>Welcome to VIComs</h1></div>
+    <div class="container">
+        <div class="title"><h2>- Choose Your Role -</h2></div>
+        <div class="btn">
+            <a href="{{ url_for('student_render') }}"><button>Student</button></a>
+            <a href="{{ url_for('employee_render') }}"><button>Employee</button></a>
+        </div>
+    </div>
+    <script src="{{url_for('static',filename='Js/open.js')}}"></script>
+</body>
+</html>
