@@ -243,6 +243,41 @@ option{
     z-index: 3;
 }
 
-h3{
+.title h3{
     font-size: 20px;
+}
+.title2 h3{
+    font-size: 15px;
+}
+
+
+.qr{
+    width:200px;
+    height:200px;
+    border:2px solid var(--color-text-prime);
+    position: absolute;
+    top:53%;
+    left:52.6%;
+    transform: translate(-50%,-50%);
+
+    background-image: url(qr.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title2{
+    content: 'QR CODE';
+    position: absolute;
+    top: 37.8%;
+    left: 52.7%;
+    transform: translate(-50%,-50%);
+    width:115px;
+    height:36px;
+    padding:10px;
+    background-color: #D7284F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
 }
