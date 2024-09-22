@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIComs - Room Cleaning</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='room.css')}}">
+    <link rel="icon" href="{{url_for('static',filename='images/mlogo.png')}}">
+</head>
+<body> 
+    <header>
+        <nav>
+            <img src="{{url_for('static',filename='images/logo_1.png')}}" alt="logo" width="111px" height="90px">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <h1>|</h1>
+                <li><a href="{{url_for('home_render')}}"id="lgout">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="graphic"></div>
+    <div class="title"><h3>ROOM CLEANING</h3></div>
+    <div class="request">
+        <form action="/room_cleaning" method="post">
+            <label for="name" id="l1">Name</label>
+            <input type="text" name="name" id="name" autocomplete="off" required>
+            <label for="block" id="l2">Hostel Block</label>
+            <input type="text" name="block" id="block" autocomplete="off" required>
+            <label for="room" id="l3">Room No.</label>
+            <input type="number" name="room" id="room" autocomplete="off" required>
+            <label for="slot" id="l4">Slot</label>
+            <select name="slot" id="slot">
+                <option value="dummy" selected>--Select Slot--</option>
+                <option value="11am-1pm">11am-1pm</option>
+                <option value="3pm-5pm">3pm-5pm</option>
+                <option value="6pm-8pm">6pm-8pm</option>
+            </select>
+            <button id="send" type="submit">SEND REQUEST</button>
+        </form>
+    </div>
+</body>
+</html>
